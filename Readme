@@ -1,0 +1,50 @@
+Proyecto de Asistente Virtual con Ohbot en Raspberry Pi
+
+Integrantes:
+- Paul Rojas 
+- Sofía Labra
+- Maite Villalón
+- Sebastian Soza
+
+Este proyecto utiliza la Raspberry Pi junto con el robot Ohbot para implementar varios asistentes virtuales que realizan diferentes funciones, como reconocimiento facial, asesor emocional, asesor deportivo, tutor de matemáticas, y generación de voz y movimiento.
+
+Scripts Incluidos
+reconocimientoFacial.py: Script para reconocimiento facial utilizando la cámara conectada a la Raspberry Pi.
+
+cantar.py: Script que hace que Ohbot cante una canción específica con movimientos de cabeza y parpadeo.
+
+AsesorEmocional.py: Asistente virtual que proporciona apoyo emocional y conversaciones interactivas utilizando la inteligencia artificial de OpenAI.
+
+AsesorDeportivo.py: Asistente especializado en deportes que proporciona información, consejos y estadísticas relacionadas con deportes.
+
+TutorMatematica.py: Asistente virtual para ayudar con problemas matemáticos y explicar conceptos matemáticos.
+
+Instalación de Módulos y Entorno Virtual
+1. Instalación del Entorno Virtual
+
+sudo apt-get install python3-venv
+python3 -m venv myenv
+source myenv/bin/activate
+
+2. Instalación de Dependencias
+
+pip install openai==0.28
+sudo apt-get install portaudio19-dev python3-pyaudio
+pip install pyaudio
+pip install SpeechRecognition
+pip install ohbot
+
+Dependencias Adicionales por Funcionalidad
+reconocimientoFacial.py:
+pip install opencv-python-headless
+
+Ejecución de los Scripts
+Para ejecutar cualquiera de los scripts después de activar el entorno virtual:
+
+source myenv/bin/activate
+python reconocimientoFacial.py
+python cantar.py
+python AsesorEmocional.py
+python AsesorDeportivo.py
+python TutorMatematica.py
+
